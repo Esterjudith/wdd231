@@ -206,6 +206,6 @@ footer {
     background-color: #f25042;
     text-align: center;
     padding: 1rem;
-    color: var(--background);
+    color: var(--paragraph-color);
     font-weight: 700;
 }
