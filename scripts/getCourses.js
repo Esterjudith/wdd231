@@ -78,18 +78,52 @@ const coursesList = [
     }
 ]
 
-const coursesElement = document.getElementById("courses");
+const coursesElement = document.getElementById('courses');
+const allBtn = document.getElementById('all');
+const cseBtn = document.getElementById('cse');
+const wddBtn = document.getElementById('wdd');
 
 //Build course divs with name and course num
-coursesList.forEach(course => {
-    const div = document.createElement('div');
-    div.classList.add('course');
-    const h3 = document.createElement('h3');
-    h3.textContent = `${course.subject} ${course.number}`;   
-    div.appendChild(h3);
-    coursesElement.appendChild(div);
 
-    if(course.completed === true) {
-        div.classList.add('completed')
-    }
+function displayCourses(courseList) {
+   //This will clear existing course elements
+   coursesElement.innerHTML = ''; 
+
+    courseList.forEach(course => {
+        const div = document.createElement('div');
+        div.classList.add('course');
+        const h3 = document.createElement('h3');
+        h3.textContent = `${course.subject} ${course.number}`;   
+        div.appendChild(h3);
+        coursesElement.appendChild(div);
+    
+        if(course.completed === true) {
+            div.classList.add('completed')
+        }
+    })
+
+}
+
+displayCourses(coursesList);
+
+
+allBtn.addEventListener('click', () => {
+   
+    displayCourses(coursesList);
 })
+
+
+cseBtn.addEventListener('click', () =>{
+   
+    const cseCourses = coursesList.filter(course => course.subject === "CSE")
+  
+    displayCourses(cseCourses);
+} )
+
+wddBtn.addEventListener('click', () =>{
+   
+    const cseCourses = coursesList.filter(course => course.subject === "WDD")
+  
+    displayCourses(cseCourses);
+} )
+

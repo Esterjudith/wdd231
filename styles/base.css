@@ -1,6 +1,7 @@
 :root {
     --background: #f8f5f2;
     --secondary-color: #f25042;
+    --accessory-color:#fcdcd9;
     --heading:#232323;
     --paragraph-color: #222525;
     --button: #078080;
@@ -149,6 +150,11 @@ figure {
     height: auto;
 }
 
+section ul {
+    margin-left: 2rem;
+    padding: 1.5rem;
+}
+
 .filters {
    text-align:center;
    margin-bottom: 0.5rem; 
@@ -157,40 +163,41 @@ figure {
 }
 
 .filters button {
-    min-width:125px;
+    min-width:100px;
     margin: 0.1rem;
     padding: 0.25rem .5rem;
     background-color: var(--button);
+    color: #fff;
     border: var(--border);    
     border-radius: 0.25rem;  
     cursor: pointer;       
 }
 
-main :last-child {
-    border-radius: 0;    
-}
 
 .col2{
   margin-bottom: 1rem;
-  border-bottom: 1px solid black;
+
 }
 
 #courses {
     display: grid;
     grid-template-columns: 1fr; 
-    grid-gap: .5rem;
+    grid-gap: .5rem;  
+    padding-left: 2rem;
+    margin-top: 0.5rem;
 }
 .course {
-    background-color:gray;
+    background-color:lightgrey;
     padding: 0.5rem;
     margin-bottom: 1rem;
     max-width: 80%;
     text-align: center;
-    border-radius: 5px; 
+    border-radius: 5px !important; 
 
 }
 .completed {
-  
+    background-color: var(--accessory-color); 
+    
 }
 
 /* =========== Footer ================= */
