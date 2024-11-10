@@ -122,8 +122,8 @@ cseBtn.addEventListener('click', () =>{
 
 wddBtn.addEventListener('click', () =>{
    
-    const cseCourses = coursesList.filter(course => course.subject === "WDD")
+    const wddCourses = coursesList.filter(course => course.subject === "WDD")
   
-    displayCourses(cseCourses);
+    displayCourses(wddCourses);
 } )
 
