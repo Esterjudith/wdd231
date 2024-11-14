@@ -6,6 +6,7 @@ const hamButton = document.getElementById("menu");
 const navigation = document.querySelector(".navigation");
 const courses = document.getElementById("courses");
 
+
 //Select all navigation links
 const navLinks = document.querySelectorAll(".navigation a");
 

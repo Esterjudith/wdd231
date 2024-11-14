@@ -82,27 +82,34 @@ const coursesElement = document.getElementById('courses');
 const allBtn = document.getElementById('all');
 const cseBtn = document.getElementById('cse');
 const wddBtn = document.getElementById('wdd');
+const credits = document.querySelector("#credits");
 
 //Build course divs with name and course num
 
 function displayCourses(courseList) {
    //This will clear existing course elements
    coursesElement.innerHTML = ''; 
-
+   credits.innerHTML = '';
     courseList.forEach(course => {
         const div = document.createElement('div');
         div.classList.add('course');
         const h3 = document.createElement('h3');
         h3.textContent = `${course.subject} ${course.number}`;   
         div.appendChild(h3);
-        coursesElement.appendChild(div);
+        coursesElement.appendChild(div);       
     
         if(course.completed === true) {
             div.classList.add('completed')
         }
     })
+    
+    const p = document.createElement('p');    
+    const totalCredit = courseList.reduce((acc, course) => acc += course.credits, 0);    
+    p.textContent = `Total Credit = ${totalCredit}`;
+    credits.appendChild(p);    
 
 }
+
 
 displayCourses(coursesList);
 

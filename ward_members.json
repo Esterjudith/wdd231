@@ -1,0 +1,18 @@
+{
+    "familyName": "Smith", 
+    "moveIndate": "2023-06-15",
+    "numberOfMembers": 4, 
+    "visitedByBishop": true,
+    "familyMembers": [
+        {
+            "name": "Mary smith",
+            "gender": "female",
+            "bithdate": "1980-03-14"
+        },
+        {
+            "name": "John smith",
+            "gender": "male",
+            "bithdate": "1980-10-18"
+        }
+    ]
+}

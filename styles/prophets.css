@@ -1,0 +1,55 @@
+:root {
+    --card: #b1d1ea;
+    --font: 'Roboto';
+    --fontColor: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 5rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
+    grid-gap: 20px;
+}
+
+
+section {
+    background-color: var(--card);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+   
+}
+
+section h2 {
+    font-size: 1.2rem;
+    color:#631604;
+    text-align: center;
+}
+
+section h3 {
+    font-size: 1rem;
+}
+
+section img {
+    max-width: 300px;
+    display: block;
+    box-shadow: 7px 10px 13px -6px rgba(0,0,0,2);
+
+}
