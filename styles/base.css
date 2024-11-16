@@ -184,8 +184,9 @@ section h2 {
 
 #credits {
     text-align: center;
-    background-color: #bd5b52;
-    color: #fff;
+    background-color: antiquewhite;
+    color: #000;
+    font-weight: 700;
     padding: 0.5rem;
     margin-bottom: 0.5rem;
 }
@@ -214,7 +215,7 @@ section h2 {
 /* =========== Footer ================= */
 
 footer {
-    background-color: #f25042;
+    background-color: antiquewhite;
     text-align: center;
     padding: 1rem;
     color: var(--paragraph-color);
