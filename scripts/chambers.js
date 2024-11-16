@@ -18,11 +18,11 @@ hamButton.addEventListener('click', () => {
 
 
 // Loop through each link and add the 'active' class to the matching link
-navLinks.forEach(link => {
-    if(link.getAttribute("href") === currentPath  ) {
-        link.classList.add("active");
-    }
-});
+// navLinks.forEach(link => {
+//     if(link.getAttribute("href") === currentPath  ) {
+//         link.classList.add("active");
+//     }
+// });
 
 currentyear.innerHTML = today.getFullYear()
 lastModified.textContent = `Last modification: ${document.lastModified}`;

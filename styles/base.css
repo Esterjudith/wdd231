@@ -110,9 +110,8 @@ nav {
     display: block;
 }
 
-nav a.active {
-    font-weight: bold;
-    color: var(--button);
+.active {  
+    color: var(--button) !important;
 }
 
 /* =========== Main ================= */
@@ -184,6 +183,7 @@ section h2 {
 
 #credits {
     text-align: center;
+    font-size: 1.3rem;
     background-color: antiquewhite;
     color: #000;
     font-weight: 700;
