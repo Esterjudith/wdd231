@@ -1,0 +1,73 @@
+[
+    {
+      "name": "Mr. Tuna",
+      "address": "123 Innovation Drive, Portland, ME 02108",
+      "phone": "617-555-1234",
+      "website": "https://www.mrtunamaine.com",
+      "image": "mrtunamaine.png",
+      "membershipLevel": 3,
+      "email": "info@tmrtunamaine.com",
+      "description": "A leading provider great tuna."
+    },
+    {
+      "name": "Westcott Mercantile",
+      "address": "61-63 Leonard Street, Belmont, MA 02139",
+      "phone": "617-484-0093",
+      "website": "https://www.westcottmercantile.com",
+      "image": "westcottmercantile.png",
+      "membershipLevel": 2,
+      "email": "contact@westcottmercantile.com",
+      "description": "Offering sustainable mercantile solutions since 2005."
+    },
+    {
+      "name": "Root Wind Kombucha",
+      "address": "789 Aqua Lane, Worcester, MA 01604",
+      "phone": "508-555-9012",
+      "website": "https://rootwildkombucha.com",
+      "image": "rootwildkombucha.png",
+      "membershipLevel": 1,
+      "email": "support@purewaterco.com",
+      "description": "Providing Kombucha flavors to the Northeast."
+    },
+    {
+      "name": "sevan Bakery",
+      "address": "321 Bakery Street, Springfield, MA 01103",
+      "phone": "413-555-3456",
+      "website": "https://sevanboston.com",
+      "image": "sevanbakery.png",
+      "membershipLevel": 3,
+      "email": "info@sevanbakery.com",
+      "description": "Armenian and Middle Eastern Food."
+    },
+    {
+      "name": "breaktime Non-profit",
+      "address": "654 Inspiration Avenue, Quincy, MA 02169",
+      "phone": "617-555-7890",
+      "website": "https://www.breaktime.org",
+      "image": "breaktime.png",
+      "membershipLevel": 2,
+      "email": "hello@creativeminds.com",
+      "description": "Non-profit organization that helps young adults break the cycle of homelessness."
+    },
+    {
+      "name": "Newtonville Books",
+      "address": "987 Recycle Road, Lowell, MA 01850",
+      "phone": "978-555-2345",
+      "website": "https://www.newtonvillebooks.com",
+      "image": "newtonvillebooks.png",
+      "membershipLevel": 1,
+      "email": "services@newtonvillebooks",
+      "description": "Independent bookstore."
+    },
+    {
+      "name": "Strong Women Strong Girls",
+      "address": "159 Culinary Court, Boston, MA 01201",
+      "phone": "413-555-6789",
+      "website": "https://swsg.org/locations/boston",
+      "image": "swsg.png",
+      "membershipLevel": 3,
+      "email": "events@swsg.com",
+      "description": "Non-profit that inspires all girls to be strong, smart, and bold."
+    }
+  ]
+  

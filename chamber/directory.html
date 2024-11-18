@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Northeast Chamber of Commerce Website">
+    <meta name="author" content="Judy Hanson">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <meta property="og:title" content="Northeast Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/commerce.js" defer></script>
+    <script src="scripts/getMembers.js" defer></script>
+    <title>Northeast Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+    <img src="images/northeast-chamber-of-commerce-high-resolution-logo-transparent-svg.svg" width="300" alt="logo image">
+
+    <button id="myButton"></button>
+    </header>
+
+        <nav id="animated">
+            <ul class="menuLinks">
+                <li><a href="directory.html">Home</a></li>
+                <li class="active"><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    <main>
+     <div><button id="grid">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="#f3a738">
+        <rect x="4" y="4" width="16" height="16" rx="2" />
+        <rect x="28" y="4" width="16" height="16" rx="2" />
+        <rect x="4" y="28" width="16" height="16" rx="2" />
+        <rect x="28" y="28" width="16" height="16" rx="2" />
+      </svg>
+     </button>
+     <button id="list">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="#f3a738">      
+        <circle cx="8" cy="12" r="4" />    
+        <rect x="16" y="10" width="28" height="4" rx="2" />        
+        <circle cx="8" cy="24" r="4" />
+        <rect x="16" y="22" width="28" height="4" rx="2" />        
+        <circle cx="8" cy="36" r="4" />
+        <rect x="16" y="34" width="28" height="4" rx="2" />
+      </svg>
+     </button></div>
+
+     <article class="grid" id="members"></article>
+    </main>
+    <footer>
+      <div class="footer-addr">
+        <h3>Northeast Chamber of Commerce</h3>
+        <p>1 main st</p>
+        <p>Boston, MA 01875</p>
+        <p>(617)555-5555</p>
+      </div>
+      <div class="footer-social">
+        <ul>
+            <li><a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.png" width="40" height="40" alt="Youtube icon"></a></li>
+            <li><a href="https://www.x.com/" target="_blank"><img src="images/twitter.png" width="40" height="40" alt=" X icon"></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank"><img src="images/linkedin.png" width="40" height="40" alt="Linkedin icon"></a></li>
+        </ul>
+        <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Icons created by Freepik - Flaticon</a>
+      </div>
+      <div class="footer-class">
+        <p>WDD231 Class Project</p> 
+        <p> Judy Hanson</p>
+        <p><span id="currentyear"></span>Northeast Chamber of Commerce</p>
+        <p id="lastModified"></p>
+      </div>
+    </footer>
+</body>
+</html>
