@@ -114,6 +114,9 @@ button {
     cursor: pointer;
 }
 
+#members {
+    min-height: 500px; 
+}
 
 section {
     border: 1px solid rgba(0, 0, 0, 0.1);
