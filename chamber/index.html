@@ -7,7 +7,7 @@
     <meta name="author" content="Judy Hanson">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
     <meta property="og:title" content="Northeast Chamber of Commerce">
     <meta property="og:type" content="website">
@@ -18,8 +18,9 @@
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="favicon.ico">
     <script src="scripts/commerce.js" defer></script>
-    <script src="scripts/getMembers.js" defer></script>
-    <title>Northeast Chamber of Commerce</title>
+    <script src="scripts/api.js" defer></script>
+
+    <title>Home Page</title>
 </head>
 <body>
     <header>
@@ -30,33 +31,45 @@
 
         <nav id="animated">
             <ul class="menuLinks">
-                <li><a href="index.html">Home</a></li>
-                <li class="active"><a href="directory.html">Directory</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
         </nav>
-    <main class="grid-list">
-     <div><button id="grid">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="#f3a738">
-        <rect x="4" y="4" width="16" height="16" rx="2" />
-        <rect x="28" y="4" width="16" height="16" rx="2" />
-        <rect x="4" y="28" width="16" height="16" rx="2" />
-        <rect x="28" y="28" width="16" height="16" rx="2" />
-      </svg>
-     </button>
-     <button id="list">
-      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="#f3a738">      
-        <circle cx="8" cy="12" r="4" />    
-        <rect x="16" y="10" width="28" height="4" rx="2" />        
-        <circle cx="8" cy="24" r="4" />
-        <rect x="16" y="22" width="28" height="4" rx="2" />        
-        <circle cx="8" cy="36" r="4" />
-        <rect x="16" y="34" width="28" height="4" rx="2" />
-      </svg>
-     </button></div>
+    <main>
+    <section class="hero">
+        <picture>
+            <source type="image/webp"  media="(min-width:1200px)" srcset="images/boston-large.webp">
+            <source type="image/webp"  media="(min-width:650px)" srcset="images/boston-small.webp">
+            <img src="images/boston0(1).webp" alt="Image of Beacon Hill Buildings" >            
+        </picture>
+       <div class="cta">
+        <p>Join Our Thriving Business Community!</p>
+        <a href="#">JOIN</a>
+       </div>
+    </section> 
+    <h1>Home</h1>
+    <section class="event-weather">
+        <div class="events cards">
+            <h2>Events</h2>
 
-     <article class="grid" id="members"></article>
+        </div>
+        <div class="current-weather cards">
+           <h2>Current Weather</h2>
+            <div class="current-card">
+                <figure>
+                    <img id="weather-icon">                
+                  </figure>
+                  <div id="current"></div>
+            </div>
+        </div>
+        <div id="forcast" class="weather-forcast cards">
+            <h2>Weather Forecast</h2>            
+        </div>
+    </section>
+    <section id="spotlight" class="spotlight-members"></section>
+    
     </main>
     <footer>
       <div class="footer-addr">

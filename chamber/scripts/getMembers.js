@@ -3,6 +3,7 @@ const listButton = document.getElementById("list");
 const display = document.querySelector("article");
 const membersElement = document.getElementById("members");
 
+
 gridButton.addEventListener('click', ()=> {
     display.classList.add('grid');
     display.classList.remove('list');
@@ -20,6 +21,7 @@ async function fetchMembersData() {
 
     members.forEach(member => {
         const section = document.createElement('section');
+        section.classList.add('members');
         section.innerHTML = `
         <h2>${member.name}</h2>
         <p>${member.address}</p>
@@ -34,6 +36,8 @@ async function fetchMembersData() {
 
 }
 
+
+
 // address
 // description
 // email
@@ -43,4 +47,8 @@ async function fetchMembersData() {
 // phone
 // website
 fetchMembersData()
+
+
+
+
 

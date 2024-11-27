@@ -66,6 +66,39 @@
     font-size: 1rem;
 }
 
+.hero {
+    position: relative;
+}
+
+.cta {    
+    position: absolute;
+    display: block;
+    top: 50px;
+    right: -2px;
+    text-align: right;
+
+}
+
+.cta p {
+    font-size: 3rem;
+    margin: 0 0 1rem 0;    
+}
+.cta a {
+    display: inline-block;
+    margin-right: 1rem;    
+}
+
+.event-weather {
+  
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+.current-card {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
    /* =========== FOOTER ============= */
 
 
