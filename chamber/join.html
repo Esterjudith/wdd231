@@ -26,7 +26,7 @@
     <header>
     <h1><img src="images/northeast-chamber-of-commerce-high-resolution-logo-transparent-svg.svg" width="300" alt="logo image"></h1>
 
-    <button id="myButton"></button>
+    <button id="myButton" aria-label="Submit form"></button>
     </header>
 
         <nav id="animated">
@@ -51,14 +51,14 @@
             <label>Business/organization's name <input type="text" name="organization" required autocomplete="organization" title="Your Organzation's Name" ></label>
     
     
-            <h3>Membership Level</h3>
+            <h2>Membership Level</h2>
             <label><input type="radio" name="membership" value="non-profit" checked> NP Membership</label>
             <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
             <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
             <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
     
             
-            <h3>Business/Organization Description</h3>
+            <h2>Business/Organization Description</h2>
             <label><textarea name="description" title="Organization Description" placeholder="Enter a summary of your organization"></textarea></label>
 
             <input type="hidden" id="formTimestamp" name="timestamp">    

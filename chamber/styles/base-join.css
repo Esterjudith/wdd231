@@ -140,7 +140,12 @@ form select {
   width: 250px;
 }
 
-form h3 {
+form input[type="radio"] {
+  font-size: 24px;
+  margin-right: 10px
+}
+
+form h2 {
   font-size: 1rem;
   color: #c0573a;
   width: 250px;
