@@ -14,13 +14,13 @@
     <meta property="og:image" content="https://esterjudith.github.io/wdd231/chamber/images/mrtunamaine.png">
     <meta property="og:url" content="https://esterjudith.github.io/wdd231/chamber/directory.html">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/base-join.css">
+    <link rel="stylesheet" href="styles/large-join.css">
     <link rel="icon" href="favicon.ico">
-    <script src="scripts/commerce.js" defer></script>
-    <script src="scripts/api.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+   
 
-    <title>Home Page</title>
+    <title>Thank you</title>
 </head>
 <body>
     <header>
@@ -37,39 +37,8 @@
                 <li><a href="#">Discover</a></li>
             </ul>
         </nav>
-    <main>
-    <section class="hero">
-        <picture>
-            <source type="image/webp"  media="(min-width:1200px)" srcset="images/boston-large.webp" width="1200" height="745">
-            <source type="image/webp"  media="(min-width:650px)" srcset="images/boston-small.webp" width="850" height="528">
-            <img src="images/boston0(1).webp" alt="Image of Beacon Hill Buildings" width="400" height="248">            
-        </picture>
-       <div class="cta">
-        <p>Join Our Thriving Business Community!</p>
-        <a href="#">JOIN</a>
-       </div>
-    </section> 
-    <h1>Home</h1>
-    <section class="event-weather">
-        <div class="events cards">
-            <h2>Events</h2>
-
-        </div>
-        <div class="current-weather cards">
-           <h2>Current Weather</h2>
-            <div class="current-card">
-                <figure>
-                    <img id="weather-icon">                
-                  </figure>
-                  <div id="current"></div>
-            </div>
-        </div>
-        <div id="forcast" class="weather-forcast cards">
-            <h2>Weather Forecast</h2>            
-        </div>
-    </section>
-    <section id="spotlight" class="spotlight-members"></section>
-    
+    <main class="thankyou">
+        <div id="results"></div>
     </main>
     <footer>
       <div class="footer-addr">
@@ -93,5 +62,6 @@
         <p id="lastModified"></p>
       </div>
     </footer>
+    <script src="scripts/commerce.js"></script>
 </body>
 </html>
