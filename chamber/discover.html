@@ -14,62 +14,32 @@
     <meta property="og:image" content="https://esterjudith.github.io/wdd231/chamber/images/mrtunamaine.png">
     <meta property="og:url" content="https://esterjudith.github.io/wdd231/chamber/directory.html">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base-join.css">
-    <link rel="stylesheet" href="styles/large-join.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="favicon.ico">
     <script src="scripts/commerce.js" defer></script>
     <script src="scripts/api.js" defer></script>
 
-    <title>Join Page</title>
+    <title>Discover Page</title>
 </head>
 <body>
     <header>
     <h1><img src="images/northeast-chamber-of-commerce-high-resolution-logo-transparent-svg.svg" width="300" alt="logo image"></h1>
 
-    <button id="myButton" aria-label="Submit form"></button>
+    <button id="myButton"></button>
     </header>
 
         <nav id="animated">
             <ul class="menuLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li class="active"><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li class="active"><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
     <main>
-       
-        <section class="form">
-            <h1>Membership Application</h1>
-    
-        <form method="GET" action="thankyou.html" class="designOne">
-            <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
-            <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-            <label>Organization Title (7 characters min) <input class="title" type="text" name="title" required autocomplete="organization-title" title="Your Organization Title. Must be at least 7 characters, using only letters, spaces, or hyphens." pattern="^[A-Za-z\s-]{7,}$" minlength="7"></label>
-            <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
-            <label>Cell Phone <input type="tel" name="phone"  required autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
-            <label>Business/organization's name <input type="text" name="organization" required autocomplete="organization" title="Your Organzation's Name" ></label>
-    
-    
-            <h2>Membership Level</h2>
-            <label><input type="radio" name="membership" value="non-profit" checked> NP Membership</label>
-            <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
-            <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
-            <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
-    
-            
-            <h2>Business/Organization Description</h2>
-            <label><textarea name="description" title="Organization Description" placeholder="Enter a summary of your organization"></textarea></label>
-
-            <input type="hidden" id="formTimestamp" name="timestamp">    
-        
-            <input type="submit" value="Start Your Membership">
-        </form>
-        </section>
-
-        <section id="cards">
-            <h1>Membership Levels</h1>            
-        </section>
+     <aside></aside>
+     
     </main>
     <footer>
       <div class="footer-addr">
