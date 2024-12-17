@@ -100,10 +100,14 @@
 }
   /* ===============DISCOVER PAGE================= */
 
-     .grid-container {      
-        grid-template-columns: 25vw auto;
+     .grid-container {  
+        margin-top: 2rem;    
+        grid-template-columns: 25vw auto;      
        
-       
+    }
+    
+    .sidebar-section {
+       margin-top: 5rem;
     }
 
     #image-container img {

@@ -349,8 +349,8 @@ picture img {
   
   /* Sidebar Sections */
   .sidebar-section {
-    margin-bottom: 20px;
-    padding: 10px 15px;
+    margin:2rem 0;
+    padding: 20px 25px;
     border-left: 4px solid #0073e6; 
     background-color: #fff;
     border-radius: 4px;
