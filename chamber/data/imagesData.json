@@ -1,0 +1,32 @@
+[
+    {
+      "src": "images/devon-wellesley-unsplash-Philadelphia2.webp",
+      "alt": "Image Building in Philadelphia",      
+      "caption": "Philadelphia"
+    },
+    {
+      "src": "images/ethan-hoover-unsplash-Philadelphia1.webp",
+      "alt": "Image of Philadelphia",    
+      "caption": "More Philadelphia"
+    },
+    {
+      "src": "images/lance-anderson-unsplash-Boston1.webp",
+      "alt": "Image of Boston",    
+      "caption": "Boston"
+    },
+    {
+      "src": "images/michael-denning-unsplash-Providence1.webp",
+      "alt": "Image of Providence",      
+      "caption": "Providence"
+    },
+    {
+      "src": "images/stephen-walker-unsplash-Maine1.webp",
+      "alt": "Image of Portland",      
+      "caption": "Portland, Maine"
+    },
+    {
+      "src": "images/william-mccue-unsplash-Manchester1.webp",
+      "alt": "Image of Manchester",     
+      "caption": "Mainchester, NH"
+    }
+  ]

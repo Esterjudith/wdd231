@@ -327,8 +327,94 @@ picture img {
 
 /* ===============DISCOVER PAGE================= */
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+/* Sidebar Styling */
+.sidebar {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  /* Sidebar Sections */
+  .sidebar-section {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border-left: 4px solid #0073e6; 
+    background-color: #fff;
+    border-radius: 4px;
+  }
+  
+  .sidebar-section h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #0073e6;
+  }
+  
+  .sidebar-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar-section ul li {
+    margin: 5px 0;
+    font-size: 0.95em;
+    line-height: 1.5;
+  }
+  
+  .sidebar-section ul li strong {
+    color: #333;
+  }
+  .calendar {
+    margin-top: 5rem;
+  }
 
+  /* Images */
 
+  #image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  #image-container div {
+    margin: 10px;
+    text-align: center;
+  }
+  
+  #image-container img { 
+    width: 60%;  
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  figcaption {
+    margin-top: 5px;
+    font-style: italic;
+    color: #333;
+  }
+  
+  #visit-message {
+    margin-top: 5rem; 
+    padding: 10px;
+    background-color: #f9f9f9;
+    line-height: normal;
+    border-radius: 4px; 
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+  }
 /* =============== FOOTER ====================== */
 
 footer { 

@@ -98,6 +98,22 @@
     gap: 2rem;
     justify-content: center;
 }
+  /* ===============DISCOVER PAGE================= */
+
+     .grid-container {      
+        grid-template-columns: 25vw auto;
+       
+       
+    }
+
+    #image-container img {
+       transition: filter 0.3s ease; 
+    }
+    
+    #image-container div img:hover {
+        filter: brightness(50%); /* Darken the image */
+    }
+      
 
    /* =========== FOOTER ============= */
 

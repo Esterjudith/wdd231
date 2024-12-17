@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="favicon.ico">
-    <script src="scripts/commerce.js" defer></script>
-    <script src="scripts/api.js" defer></script>
+    <script src="scripts/getImages.js" defer></script>
+    
 
     <title>Discover Page</title>
 </head>
@@ -37,9 +37,67 @@
                 <li class="active"><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
-    <main>
-     <aside></aside>
-     
+    <main class="grid-container">
+     <aside class="sidebar">
+      <h2>Northeast Region Overview</h2>  
+      <!-- Demographics Section -->
+      <div class="sidebar-section demographics">
+        <h3>Demographics</h3>
+        <ul>
+          <li><strong>Population:</strong> ~57 million</li>
+          <li><strong>Major States:</strong> New York, Pennsylvania, Massachusetts</li>
+          <li><strong>Languages:</strong> English, Spanish, Portuguese</li>
+          <li><strong>Urban Centers:</strong> New York City, Boston, Philadelphia</li>
+        </ul>
+      </div>
+
+      <!-- Statistical Data Section -->
+      <div class="sidebar-section statistics">
+        <h3>Statistical Data</h3>
+        <ul>
+          <li><strong>GDP:</strong> $5.7 trillion (2023)</li>
+          <li><strong>Median Income:</strong> $70,000 per year</li>
+          <li><strong>Education:</strong> 40% with bachelor's degree</li>
+          <li><strong>Climate:</strong> Humid continental, with snowy winters</li>
+        </ul>
+      </div>
+
+      <!-- Events Section -->
+      <div class="sidebar-section events">
+        <h3>Upcoming Events</h3>
+        <ul>
+          <li><strong>Boston Marathon:</strong> April 15, 2024</li>
+          <li><strong>New York State Fair:</strong> August 21-September 2, 2024</li>
+          <li><strong>Fall Foliage Festival:</strong> October 2024 (various locations)</li>
+          <li><strong>Thanksgiving Parade:</strong> November 28, 2024, NYC</li>
+        </ul>
+      </div>
+
+      <!-- Attractions Section -->
+      <div class="sidebar-section attractions">
+        <h3>Top Attractions</h3>
+        <ul>
+          <li><strong>Statue of Liberty:</strong> New York, NY</li>
+          <li><strong>Freedom Trail:</strong> Boston, MA</li>
+          <li><strong>Niagara Falls:</strong> Border of NY and Canada</li>
+          <li><strong>Independence Hall:</strong> Philadelphia, PA</li>
+          <li><strong>White Mountains:</strong> New Hampshire</li>
+        </ul>
+      </div>  
+
+      <!-- Calendar -->
+      <div class="calendar">
+        <iframe src="https://calendar.google.com/calendar/embed?src=450217ed49fc218db17dab7b2cb44ccf368b40c06b8ee3ee7354e42003c9100c%40group.calendar.google.com&ctz=America%2FPhoenix" style="border: 0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+      </div>
+
+      <!-- Visit Message -->
+      <div id="visit-message"></div>
+
+      
+     </aside>
+     <section>
+      <div id="image-container"></div>
+     </section>     
     </main>
     <footer>
       <div class="footer-addr">
