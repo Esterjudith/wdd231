@@ -415,6 +415,38 @@ picture img {
     font-weight: 600;
     color: #333;
   }
+  /* Calendar */
+  .calendar {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .calendar table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .calendar caption {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .calendar th,
+  .calendar td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+  }
+  
+  .calendar th {
+    background-color: #f4f4f4;
+  }
+  
+  .calendar td {
+    background-color: #fff;
+  }
 /* =============== FOOTER ====================== */
 
 footer { 
