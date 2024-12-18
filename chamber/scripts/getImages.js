@@ -11,7 +11,8 @@ async function loadImages() {
         // Create the image element
         const img = document.createElement('img');
         img.src = image.src;
-        img.alt = image.alt;       
+        img.alt = image.alt;
+        img.loading = 'lazy';       
   
         // Create the caption element
         const caption = document.createElement('figcaption');
