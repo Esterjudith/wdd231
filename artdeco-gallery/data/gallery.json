@@ -1,0 +1,23 @@
+{
+    "carouselImages": [
+      "images/engin-akyurt--unsplash-polkadots.webp",
+      "images/alice-donovan-rouse-unsplash-streetart.webp",
+      "images/maxim-hopman-unsplash-b&w.webp"
+    ],
+    "featuredArt": [
+      {
+        "title": "Sunset Over Water",
+        "artist": "John Doe",
+        "date": "2022-05-15",
+        "price": "$500",
+        "image": "images/jr-korpa--unsplash-abstract.webp"
+      },
+      {
+        "title": "Mountain Majesty",
+        "artist": "Jane Smith",
+        "date": "2021-08-20",
+        "price": "$700",
+        "image": "images/europeana--unsplash-flowers.webp"
+      }
+    ]
+  }

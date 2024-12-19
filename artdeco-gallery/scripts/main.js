@@ -1,0 +1,75 @@
+const currentyear = document.getElementById("currentyear");
+const today = new Date();
+const lastModified = document.getElementById("lastModified");
+const nav = document.getElementById("animated");
+const hamburger = document.getElementById("myButton");
+
+currentyear.innerHTML = today.getFullYear()
+lastModified.textContent = `Last modification: ${document.lastModified}`;
+
+hamburger.addEventListener('click', ()=> {
+    nav.classList.toggle('open');
+    hamburger.classList.toggle('open');
+})
+
+document.addEventListener("DOMContentLoaded", () => {
+    const carouselImages = [];
+    let currentImageIndex = 0;
+
+    const carouselImageElement = document.getElementById("carouselImage");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+    const cardContainer = document.getElementById("cardContainer");
+
+    async function fetchGalleryData() {
+        try {
+            const response = await fetch("data/gallery.json");
+            const data = await response.json();
+
+            // Load carousel images
+            carouselImages.push(...data.carouselImages);
+            updateCarousel();
+
+            // Load featured art cards
+            populateCards(data.featuredArt);
+        } catch (error) {
+            console.error("Error fetching gallery data:", error);
+        }
+    }
+
+    function updateCarousel() {
+        carouselImageElement.src = carouselImages[currentImageIndex];
+        carouselImageElement.alt = `Image ${currentImageIndex + 1}`;
+    }
+
+    prevBtn.addEventListener("click", () => {
+        currentImageIndex = (currentImageIndex - 1 + carouselImages.length) % carouselImages.length;
+        updateCarousel();
+    });
+
+    nextBtn.addEventListener("click", () => {
+        currentImageIndex = (currentImageIndex + 1) % carouselImages.length;
+        updateCarousel();
+    });
+
+    function populateCards(featuredArt) {
+        featuredArt.forEach(art => {
+            const card = document.createElement("div");
+            card.classList.add("card");
+
+            card.innerHTML = `
+                <img src="${art.image}" alt="${art.title}" class="card-image">
+                <h3>${art.title}</h3>
+                <p><strong>Artist:</strong> ${art.artist}</p>
+                <p><strong>Date:</strong> ${art.date}</p>
+                <p><strong>Price:</strong> ${art.price}</p>
+            `;
+
+            cardContainer.appendChild(card);
+        });
+    }
+
+    fetchGalleryData();
+});
+
+
