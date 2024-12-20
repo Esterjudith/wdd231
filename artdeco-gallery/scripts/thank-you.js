@@ -47,7 +47,7 @@ function show(cup) {
    <p>First Name: ${show('first')} ${show('last')}</p>
    <p>Email: ${show('email')} </p>
    <p>Phone Number: ${show('phone')} </p>   
-   <p>Date submitted: ${show('timestamp')} </p>
+  
 
   `
 //(first name, last name, email, mobile number, business name, and current date timestamp from the hidden field)
