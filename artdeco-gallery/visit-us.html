@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fine Art Gallery website">
+    <meta name="author" content="Judy Hanson">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <meta property="og:title" content="ArtDeco Gallery">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://esterjudith.github.io/wdd231/artdeco-gallery/images/engin-akyurt--unsplash-polkadots.webp">
+    <meta property="og:url" content="https://esterjudith.github.io/wdd231/artdeco-gallery/index.html">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/main.js"></script>
+    <script src="scripts/thank-you.js" defer></script>
+    <title>Visit Us | Timeless Elegance in Art</title>
+</head>
+<body>
+    <header>
+        <button id="myButton"></button>
+        <div class="logo" ><img src="images/artdeco-gallery-high-resolution-logo-transparent.webp" width="100" alt="logo image"></div>
+
+    </header>
+    <nav id="animated">
+        <ul class="menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="artist.html">Artists</a></li>
+            <li class="active"><a href="visit-us.html">Visit Us</a></li>            
+        </ul>
+    </nav>
+    <main>    
+         <!-- Visit Hero Section -->
+         <section class="visit-hero">
+            <div >
+                <img src="images/maxim-hopman-unsplash-b&w.webp" alt="black & white landscape photograph" loading="lazy">
+             
+            </div>
+        </section>
+
+        <section class="visit">
+           <div class="visit-wrapper">
+            <div class="visit-info">
+                <h1>Our address</h1>
+                <p>1 Main St.</p>
+                <p>Boston, MA 01875</p>
+                <hr>
+                <p>Phone: (617) 555-5555</p>
+               
+                <h2>Hours of Operation</h2>
+                <p>Monday - Friday: 9:00am - 5:00pm</p>
+                <p>Saturday: 10:00am - 4:00pm</p>
+                <p>Sunday: Closed</p>
+              
+            </div>
+
+            
+         <div class="visit-form">
+            <h2>Personal showing request</h2>
+            
+            <small>Fields in red are required</small>
+            <form method="GET" action="thank-you.html" class="designOne">
+                <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                
+                <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
+                <label>Cell Phone <input type="tel" name="phone"  required autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+                
+                
+                <h3>Artist of interest</h3>
+                <label><textarea name="description" title="Artist request" placeholder="in advance of your visit it would be very helpful to know if there is an artisit or artwork that is of interest? I will endeavour to make selected morks available for your to view"></textarea></label>
+    
+                <input type="hidden" id="formTimestamp" name="timestamp">    
+            
+                <input type="submit" value="Viewing Request">
+            </form>
+         </div>
+           </div>
+        </section>
+
+      
+        </section>
+    </main>  
+    <footer>
+        <div class="footer-addr">
+            <h3>ArtDeco Gallery</h3>
+            <p>1 main st</p>
+            <p>Boston, MA 01875</p>
+            <p>(617)555-5555</p>
+          </div>
+          <div class="footer-social">
+            <ul>
+                <li><a href="https://www.youtube.com/" target="_blank"><img src="../chamber/images/youtube.png" width="40" height="40" alt="Youtube icon"></a></li>
+                <li><a href="https://www.x.com/" target="_blank"><img src="../chamber/images/twitter.png" width="40" height="40" alt=" X icon"></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><img src="../chamber/images/linkedin.png" width="40" height="40" alt="Linkedin icon"></a></li>
+            </ul>
+            <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Icons created by Freepik - Flaticon</a>
+          </div>
+          <div class="footer-class">
+            <p>WDD231 Class Project</p> 
+            <p> Judy Hanson</p>
+            <p><span id="currentyear"></span>ArtDeco Gallery</p>
+            <p id="lastModified"></p>
+          </div>
+    </footer>
+</body>
+</html>

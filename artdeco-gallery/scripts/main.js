@@ -7,6 +7,13 @@ const hamburger = document.getElementById("myButton");
 currentyear.innerHTML = today.getFullYear()
 lastModified.textContent = `Last modification: ${document.lastModified}`;
 
+document.addEventListener('DOMContentLoaded', () => {
+    const formTimestamp = document.getElementById("formTimestamp");
+    if (formTimestamp) {
+        formTimestamp.value = currentTimestamp;
+    }
+  });
+
 hamburger.addEventListener('click', ()=> {
     nav.classList.toggle('open');
     hamburger.classList.toggle('open');

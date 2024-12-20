@@ -36,7 +36,7 @@
     /* ===================== MAIN ======================= */
     
     .cards {
-        padding: 40px; /* Additional padding for spacing */
+        padding: 40px; 
         text-align: center;
     }
 
@@ -64,8 +64,53 @@
         height: auto;
     }
 
+    /* ========== ARTISTS PAGE ========= */
+
+    .modal { 
+        position: absolute ;   
+        top:0 !important;
+        left: 10rem !important;
+    }
+ 
+    /* =============== VISIT US PAGE =============== */
+    .visit-hero{
+        background-color: #EFEFEF;
+        text-align: center;
+    
+    }
+
+    .visit{
+        padding: 20px;
+        
+    }
+    
+    .visit-wrapper{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       gap: 100px;
+       padding: 20px;
+    }  
+
+    hr {
+        width: 400px;
+        margin: 0 auto;
+        
+    }
+   
+    
     /* ========== FOOTER ============ */
     footer {
      line-height: var(--lg-line-height);
+     padding: 1rem 2rem;
     }
+
+    .footer-social{
+        text-align: center;
+    }
+
+    .footer-class {
+        text-align: right;
+     padding-right: 5px;
+    }
+
 } 

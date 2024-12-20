@@ -10,14 +10,16 @@
         "artist": "John Doe",
         "date": "2022-05-15",
         "price": "$500",
-        "image": "images/jr-korpa--unsplash-abstract.webp"
+        "image": "images/jr-korpa--unsplash-abstract.webp",
+        "description": "This painting captures the beauty of a sunset over the water. The colors are vibrant and the brush strokes are bold."
       },
       {
         "title": "Mountain Majesty",
         "artist": "Jane Smith",
         "date": "2021-08-20",
         "price": "$700",
-        "image": "images/europeana--unsplash-flowers.webp"
+        "image": "images/europeana--unsplash-flowers.webp",
+        "description": "This painting depicts a majestic bouquet of flowers in the foreground. The colors are rich and the details are intricate."
       }
     ]
   }
