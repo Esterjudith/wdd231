@@ -1,53 +1,48 @@
+// Parse the URL for form data
 const currentURL = window.location.href;
-console.log(currentURL);
-
-
 const everything = currentURL.split("?");
-console.log(everything)
+let formData = everything[1]?.split("&");
 
-let formData = everything[1].split('&')
-console.log("formData:", formData)
+if (formData) {
+    // Initialize an object to store form data
+    const formValues = {};
 
-function show(cup) {
-    console.log(cup)
+    // Iterate over form data and save to localStorage
     formData.forEach((element) => {
-        console.log(element)
-        if(element.startsWith(cup)){
-          result = element.split('=')[1].replace("%40", "@")
-          // Check if the result looks like an ISO timestamp
-          if (/^\d{4}-\d{2}-\d{2}T\d{2}%3A\d{2}%3A\d{2}\.\d{3}Z$/.test(result)) {
-            // Decode the URL-encoded timestamp
-            const decodedTimestamp = decodeURIComponent(result);
-            
-            // Create a Date object
-            const date = new Date(decodedTimestamp);
-            
-            // Format the date in a more readable way
-            result = date.toLocaleDateString('en-US', {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric',
-              hour: '2-digit',
-              minute: '2-digit',
-              second: '2-digit',
-              hour12: true
-            });
-          }
+        const [key, value] = element.split("=");
+        if (key && value) {
+            let decodedValue = decodeURIComponent(value.replace(/\+/g, " "));
+            if (key === "timestamp") {
+                // Decode timestamp and format it
+                const date = new Date(decodedValue);
+                decodedValue = date.toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    second: "2-digit",
+                    hour12: true,
+                });
+            }
+            formValues[key] = decodedValue;
         }
-          
-        
-    })
-    return(result)
-  }
+    });
 
-  const showInfo = document.querySelector('#results')
+    // Save the form values to localStorage
+    localStorage.setItem("formSubmission", JSON.stringify(formValues));
 
-  showInfo.innerHTML = `
-   <h1>Thank you for your request!</h1>
-   <p>First Name: ${show('first')} ${show('last')}</p>
-   <p>Email: ${show('email')} </p>
-   <p>Phone Number: ${show('phone')} </p>   
-  
-
-  `
-//(first name, last name, email, mobile number, business name, and current date timestamp from the hidden field)
+    // Display form data on the page
+    const showInfo = document.querySelector("#results");
+    if (showInfo) {
+        showInfo.innerHTML = `
+            <h1>Thank you for your request!</h1>
+            <p>First Name: ${formValues.first || "N/A"}</p>
+            <p>Last Name: ${formValues.last || "N/A"}</p>
+            <p>Email: ${formValues.email || "N/A"}</p>
+            <p>Phone Number: ${formValues.phone || "N/A"}</p>
+            <p>Date Submitted: ${formValues.timestamp || "N/A"}</p>
+            <p>Artist or Artwork of Interest: ${formValues.description || "None specified"}</p>
+        `;
+    }
+}

@@ -7,12 +7,17 @@ const hamburger = document.getElementById("myButton");
 currentyear.innerHTML = today.getFullYear()
 lastModified.textContent = `Last modification: ${document.lastModified}`;
 
-document.addEventListener('DOMContentLoaded', () => {
-    const formTimestamp = document.getElementById("formTimestamp");
-    if (formTimestamp) {
-        formTimestamp.value = currentTimestamp;
-    }
-  });
+// Ensure the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector(".designOne");
+    const timestampInput = document.getElementById("formTimestamp");
+
+    // Add timestamp to the form before submission
+    form.addEventListener("submit", () => {
+        const now = new Date().toISOString(); // Generate current timestamp in ISO format
+        timestampInput.value = now; // Set the value of the hidden input field
+    });
+});
 
 hamburger.addEventListener('click', ()=> {
     nav.classList.toggle('open');
@@ -65,7 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
             card.classList.add("card");
 
             card.innerHTML = `
-                <img src="${art.image}" alt="${art.title}" class="card-image">
+                <img src="${art.image}" alt="${art.title}" class="card-image" width="640">
                 <h3>${art.title}</h3>
                 <p><strong>Artist:</strong> ${art.artist}</p>
                 <p><strong>Date:</strong> ${art.date}</p>
